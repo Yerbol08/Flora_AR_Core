@@ -55,7 +55,7 @@ class NotificationsFragment : Fragment(R.layout.fragment_notifications) {
 
     private suspend fun loadModels() {
         model = ModelRenderable.builder()
-            .setSource(context, Uri.parse("models/Flower.glb"))
+            .setSource(context, Uri.parse("models/tulip.glb"))
             .setIsFilamentGltf(true)
             .await()
         modelView = ViewRenderable.builder()
